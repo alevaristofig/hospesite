@@ -1,2 +1,5 @@
+.left{float: left;}
 .div_busca_dominio{padding: 40px 15px;text-align: center;}
 .label_busca_dominio{font-family: arial;font-size: 21px;}
+.input_dominio{width: 300px !important;text-align: center;font-family: arial;font-size: 20px;}
+.btn_registro{margin-top: 12px;}
