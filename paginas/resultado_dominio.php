@@ -14,18 +14,7 @@
             <div class="container">
                 <div class="navbar-header">
                     <a href="">Logo</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <form class="navbar-form navbar-right">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Email" />
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Senha" />
-                        </div>
-                        <button type="submit" class="btn btn-success">Entrar</button>
-                    </form>
-                </div>                
+                </div>                           
             </div>            
         </nav>
         <div class="jumbotron">
