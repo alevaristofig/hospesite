@@ -3,3 +3,5 @@
 .label_busca_dominio{font-family: arial;font-size: 21px;}
 .input_dominio{width: 300px !important;text-align: center;font-family: arial;font-size: 20px;}
 .btn_registro{margin-top: 12px;}
+#resultadodominio{border: 1px solid #1b6d85;padding-left: 5px;padding-top: 5px;}
+#btn_reg{margin-bottom: 10px;}
