@@ -1,7 +1,11 @@
 .left{float: left;}
+.block{display: block;}
+.tex-center{text-align: center;}
 .div_busca_dominio{padding: 40px 15px;text-align: center;}
 .label_busca_dominio{font-family: arial;font-size: 21px;}
 .input_dominio{width: 300px !important;text-align: center;font-family: arial;font-size: 20px;}
 .btn_registro{margin-top: 12px;}
 #resultadodominio{border: 1px solid #1b6d85;padding-left: 5px;padding-top: 5px;}
 #btn_reg{margin-bottom: 10px;}
+#div_acesso{border-right: 1px solid #204d74;width: 462px;padding-left: 50px;}
+#div_conta{padding-left: 15px;}
