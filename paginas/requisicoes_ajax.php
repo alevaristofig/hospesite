@@ -12,28 +12,47 @@
         if($uf == 'be')
         {
             $where = 'WHERE 2=2 ORDER BY id';
-        }
+            
+            $sql = 'SELECT id,nome FROM estados WHERE 2';
+            
+            $sth = $con->prepare($sql);
+            
+            if(!$sth->execute())
+            {
+                echo 0;
+            }
+            else
+            {
+               $estados = $sth->fetchAll();
+
+               $estados = json_encode($estados);
+
+               echo $estados;           
+            }
+        }   
         else
         {
-            $where = 'WHERE 2=2 AND id = '.$uf.' ORDER BY id';
+            $sql = 'SELECT id,nome FROM cidades WHERE id_estado = :id_estado';
+            
+            $sth = $con->prepare($sql);
+            
+            $sth->bindParam('id_estado', $uf,PDO::PARAM_INT);
+            
+            if(!$sth->execute())
+            {
+                echo 0;
+            }
+            else
+            {
+               $cidades = $sth->fetchAll();
+
+               $cidades = json_encode($cidades);
+
+               echo $cidades;           
+            }
+
         }
         
-        $sql = 'SELECT id,nome FROM estados WHERE 2';
-        
-        $sth = $con->prepare($sql);
-        
-        if(!$sth->execute())
-        {
-            echo 0;
-        }
-        else
-        {
-           $estados = $sth->fetchAll();
-           
-           $estados = json_encode($estados);
-           
-           echo $estados;           
-        }
     }
 
 ?>

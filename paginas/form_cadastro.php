@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../webapps/css/hospesite.css" />
         <script type="text/javascript" src="../webapps/jquery.js"></script>
         <script type="text/javascript" src="../webapps/bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript" src="../webapps/js/jquery.mask.js"></script>
         <script type="text/javascript" src="../webapps/js/hospesite.js"></script>
     </head>
     <body>
@@ -40,18 +41,35 @@
                                 <input type="text" name="numero" id="numero" class="left form-control input-cad2" />
                                 <label for="complemento" class="left label_complemento_bairro">Complemento:</label>
                                 <input type="text" name="complemento" id="complemento" class="left form-control input-cad3" />
-                                <label for="bairro" class="left label_complemento_bairro">Bairro:</label>
-                                <input type="text" name="bairro" id="bairro" class="left form-control input-cad4" />
+                                <label for="cep" class="left label_complemento_bairro">Cep:</label>
+                                <input type="text" name="cep" id="cep" class="left form-control input-cad2" />
                             </div>                            
                         </div>
-                         <div class="row text-left">
+                        <div class="row text-left linha-cad">
+                            <div class="col-lg-10">
+                                <label for="bairro" class="left label_bairro">Bairro:</label>
+                                <input type="text" name="bairro" id="bairro" class="left form-control input-cad" />
+                            </div>
+                        </div>
+                        <div class="row text-left linha-cad">
                              <div class="col-lg-10">
-                                 <label for="estado" class="left label_numero">Estado:</label>
-                                 <select name="estado" id="estado" class="form-control select-estado">
+                                 <label for="estado" class="left label_uf">Estado:</label>
+                                 <select name="estado" id="estado" class="left form-control select-estado">
                                      <option value="0">Escolha um Estado!</option>
+                                 </select>
+                                 <label for="cidade" class="left label_complemento_bairro">Cidade:</label>
+                                 <select name="cidade" id="cidade" class="left form-control select-estado" disabled>
+                                     <option value="0">Escolha uma Cidade!</option>
                                  </select>
                              </div>
                          </div>
+                        <div class="row text-left">
+                            <div class="col-lg-10">
+                                <label for="empresa" class="left label_empresa">Empresa:</label>
+                                <input type="text" name="empresa" id="empresa" class="left form-control input-cad" />
+                            </div>
+                        </div>
+                        
                     </form>
                 </div>
             </div>
